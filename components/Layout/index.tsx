@@ -23,7 +23,6 @@ export const Layout = ({ children }: ILayout) => {
             <header className={styles.header}>
                 <div className="title">
                     <h2>Все о криптоволютах</h2>
-                    <h3>Все в одном</h3>
                 </div>
                 <div className={styles.navbar}>
                     <Button variant="secondary" onClick={handleModalShow}><Image width="25" height="25" src='/icons/hamburger.svg' alt="hamburger" /></Button>
@@ -32,7 +31,7 @@ export const Layout = ({ children }: ILayout) => {
             </header>
 
             <main className={styles.main}>
-                <Row className="page_container">
+                <Row className={styles.page_container}>
                     {children}
                 </Row>
             </main>

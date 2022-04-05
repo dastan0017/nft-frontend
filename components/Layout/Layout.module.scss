@@ -14,6 +14,7 @@
 	position: relative;
 	color: white;
 	text-align: center;
+	align-items: center;
 
 	& title {
 		display: flex;
@@ -21,20 +22,17 @@
 	}
 
 	& h2 {
-		font-size: 20px;
-	}
-	& h3 {
-		font-size: 14px;
+		font-size: 30px;
 	}
 }
 
 .main {
-	width: 100%;
+	width: 80%;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	margin: 2rem 0;
+	margin: 2rem auto;
 }
 
 .title {
@@ -50,4 +48,9 @@
 	& button {
 		border: none;
 	}
+}
+
+.page_container {
+	width: 100%;
+	margin: 0 auto;
 }
