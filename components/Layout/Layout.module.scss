@@ -1,6 +1,6 @@
 .container {
 	min-height: 100vh;
-	width: 100%;
+	width: 70%;
 	min-width: 450px;
 	position: relative;
 	background: #29313c;
@@ -27,12 +27,12 @@
 }
 
 .main {
-	width: 80%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	margin: 2rem auto;
+	margin-top: 2rem;
 }
 
 .title {
@@ -52,5 +52,7 @@
 
 .page_container {
 	width: 100%;
-	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
