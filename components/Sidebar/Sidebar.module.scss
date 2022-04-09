@@ -1,0 +1,30 @@
+.nav_links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.nav_link {
+	display: flex;
+	margin-bottom: 0.5rem;
+	padding: 6px;
+	padding-left: 1rem;
+	cursor: pointer;
+	border-radius: 6px;
+
+	& h3 {
+		color: #29313c;
+		margin-left: 2rem;
+	}
+}
+
+.active_link {
+	border-right: 10px solid #29313c;
+	background: #2b293c28;
+	& h3 {
+		color: #29313c;
+	}
+}

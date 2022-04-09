@@ -1,6 +1,7 @@
 .container {
 	min-height: 100vh;
 	width: 70%;
+	min-height: 100vh;
 	min-width: 450px;
 	position: relative;
 	background: #29313c;
@@ -22,7 +23,7 @@
 	}
 
 	& h2 {
-		font-size: 30px;
+		font-size: 20px;
 	}
 }
 
