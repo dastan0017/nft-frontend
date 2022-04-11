@@ -8,7 +8,7 @@ import tests from '../../public/images/tests.png'
 import monitoring from '../../public/images/monitoring.png'
 import presentation from '../../public/images/presentation.png'
 import blogs from '../../public/images/blogs.png'
-import * as styles from './Sidebar.module.scss'
+import styles from './Sidebar.module.scss'
 import { useRouter } from 'next/router'
 
 interface ISidebar {

@@ -2,7 +2,7 @@ import { Suspense } from "react"
 import { NextPage } from "next"
 import { Col, Row } from "react-bootstrap"
 import { Accordion } from 'react-bootstrap'
-import * as styles from './WordList.module.scss'
+import styles from './WordList.module.scss'
 
 export const WordListPage: NextPage = () => {
     return (
