@@ -25,15 +25,15 @@ export const Layout = ({ children }: ILayout) => {
                     <h2>Все о криптоволютах</h2>
                 </div>
                 <div className={styles.navbar}>
-                    <Button variant="secondary" onClick={handleModalShow}><Image width="25" height="25" src='/icons/hamburger.svg' alt="hamburger" /></Button>
+                    <button onClick={handleModalShow}><Image width="50" height="50" src='/icons/hamburger.svg' alt="hamburger" /></button>
                 </div>
                 <Sidebar handleModalClose={handleModalClose} isModalOpen={isModalOpen} />
             </header>
 
             <main className={styles.main}>
-                <Row className={styles.page_container}>
+                <div className={styles.page_container}>
                     {children}
-                </Row>
+                </div>
             </main>
 
             <footer className={styles.footer}>

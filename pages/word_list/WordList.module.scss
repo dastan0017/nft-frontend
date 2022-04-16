@@ -6,7 +6,15 @@
 .card {
 	margin-bottom: 1rem;
 
+	& .accordion-item h2 button {
+		background: #29313c !important;
+	}
 	& p {
 		color: #29313c;
 	}
+}
+
+.accordion_header button {
+	background: #29313c !important;
+	color: white;
 }

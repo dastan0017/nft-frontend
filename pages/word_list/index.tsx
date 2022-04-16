@@ -15,7 +15,7 @@ export const WordListPage: NextPage = () => {
                     <Col className={styles.cards}>
                         <Accordion className={styles.card}>
                             <Accordion.Item eventKey="1">
-                                <Accordion.Header>
+                                <Accordion.Header className={styles.accordion_header} style={{ background: "#29313C" }}>
                                     Криптовалюта бул
                                 </Accordion.Header>
                                 <Accordion.Body>
@@ -30,7 +30,7 @@ export const WordListPage: NextPage = () => {
                         </Accordion>
                         <Accordion className={styles.card}>
                             <Accordion.Item eventKey="2">
-                                <Accordion.Header>
+                                <Accordion.Header className={styles.accordion_header}>
                                     Криптовалюта бул
                                 </Accordion.Header>
                                 <Accordion.Body>
@@ -42,7 +42,7 @@ export const WordListPage: NextPage = () => {
                         </Accordion>
                         <Accordion className={styles.card}>
                             <Accordion.Item eventKey="3">
-                                <Accordion.Header>
+                                <Accordion.Header className={styles.accordion_header}>
                                     Криптовалюта бул
                                 </Accordion.Header>
                                 <Accordion.Body>
@@ -54,7 +54,7 @@ export const WordListPage: NextPage = () => {
                         </Accordion>
                         <Accordion className={styles.card}>
                             <Accordion.Item eventKey="4">
-                                <Accordion.Header>
+                                <Accordion.Header className={styles.accordion_header}>
                                     Криптовалюта бул
                                 </Accordion.Header>
                                 <Accordion.Body>
