@@ -8,6 +8,7 @@ import tests from '../../public/images/tests.png'
 import monitoring from '../../public/images/monitoring.png'
 import presentation from '../../public/images/presentation.png'
 import blogs from '../../public/images/blogs.png'
+import home from '../../public/images/home.png'
 import styles from './Sidebar.module.scss'
 import { useRouter } from 'next/router'
 
@@ -28,33 +29,34 @@ export const Sidebar: React.FC<ISidebar> = ({ isModalOpen, handleModalClose }: I
                     <Row className={styles.nav_links}>
                         <Link href="./">
                             <div className={`${styles.nav_link} ${router.pathname === '/' && styles.active_link}`}>
+                                <Image src={home} alt="Dictionary icon" width="30px" height="30px" />
                                 <h3 >Главная</h3>
                             </div>
                         </Link>
                         <Link href="./word_list">
                             <div className={`${styles.nav_link} ${router.pathname === '/word_list' && styles.active_link}`}>
-                                <Image src={dictionary} alt="Dictionary icon" width="30px" height="20px" />
+                                <Image src={dictionary} alt="Dictionary icon" width="30px" height="30px" />
                                 <h3 >Слова</h3>
                             </div>
                         </Link>
                         <div className={styles.nav_link}>
-                            <Image src={tasks} alt="Tasks icon" width="30px" height="20px" />
+                            <Image src={tasks} alt="Tasks icon" width="30px" height="30px" />
                             <h3>Задания</h3>
                         </div>
                         <div className={styles.nav_link}>
-                            <Image src={tests} alt="Tests icon" width="30px" height="20px" />
+                            <Image src={tests} alt="Tests icon" width="30px" height="30px" />
                             <h3>Тесты</h3>
                         </div>
                         <div className={styles.nav_link}>
-                            <Image src={monitoring} alt="Monitoring icon" width="30px" height="20px" />
+                            <Image src={monitoring} alt="Monitoring icon" width="30px" height="30px" />
                             <h3>Анализы</h3>
                         </div>
                         <div className={styles.nav_link}>
-                            <Image src={presentation} alt="Presentation icon" width="30px" height="20px" />
+                            <Image src={presentation} alt="Presentation icon" width="30px" height="30px" />
                             <h3>Презентации</h3>
                         </div>
                         <div className={styles.nav_link}>
-                            <Image src={blogs} alt="Blog icon" width="30px" height="20px" />
+                            <Image src={blogs} alt="Blog icon" width="30px" height="30px" />
                             <h3>Статьи</h3>
                         </div>
                     </Row>
