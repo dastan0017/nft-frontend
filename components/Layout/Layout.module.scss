@@ -46,9 +46,10 @@
 }
 
 .navbar {
-	position: absolute;
+	position: fixed;
 	top: 2px;
 	right: 6px;
+	z-index: 100;
 
 	& button {
 		border: none;

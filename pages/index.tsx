@@ -39,10 +39,12 @@ const Home: NextPage = () => {
                 <p>crypto_trillioner</p>
               </div>
             </Link>
-            <div className={styles.card}>
-              <h3 style={{ color: '#2F7E79' }}>Задания</h3>
-              <p>crypto_trillioner</p>
-            </div>
+            <Link href="./tasks">
+              <div className={styles.card}>
+                <h3 style={{ color: '#2F7E79' }}>Задания</h3>
+                <p>crypto_trillioner</p>
+              </div>
+            </Link>
             <div className={styles.card}>
               <h3 style={{ color: '#FA854C' }}>Тесты</h3>
               <p>crypto_trillioner</p>

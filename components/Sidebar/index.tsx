@@ -39,10 +39,12 @@ export const Sidebar: React.FC<ISidebar> = ({ isModalOpen, handleModalClose }: I
                                 <h3 >Слова</h3>
                             </div>
                         </Link>
-                        <div className={styles.nav_link}>
-                            <Image src={tasks} alt="Tasks icon" width="30px" height="30px" />
-                            <h3>Задания</h3>
-                        </div>
+                        <Link href="./tasks">
+                            <div className={styles.nav_link}>
+                                <Image src={tasks} alt="Tasks icon" width="30px" height="30px" />
+                                <h3>Задания</h3>
+                            </div>
+                        </Link>
                         <div className={styles.nav_link}>
                             <Image src={tests} alt="Tests icon" width="30px" height="30px" />
                             <h3>Тесты</h3>

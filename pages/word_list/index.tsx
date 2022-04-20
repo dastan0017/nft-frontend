@@ -1,17 +1,22 @@
-import { Suspense } from "react"
-import { GetStaticProps } from "next"
+import { useEffect, useState } from "react"
 import { Col } from "react-bootstrap"
 import { Accordion } from 'react-bootstrap'
 import styles from './WordList.module.scss'
 import Image from "next/image"
-import PropTypes from 'prop-types'
 import ReactMarkdown from "react-markdown";
 
-interface IWordsList {
-    words: object[]
-}
+export const WordListPage = () => {
+    const [wordsList, setWordsList] = useState([])
 
-export const WordListPage = ({ words }: IWordsList) => {
+    useEffect(() => {
+        const getWords = async () => {
+            const response: Response = await fetch('https://timelysoft-backend.herokuapp.com/jobs')
+            const words = await response.json()
+            setWordsList(words)
+        }
+
+        getWords()
+    }, [])
 
     return (
         <div className={styles.page_container}>
@@ -23,7 +28,7 @@ export const WordListPage = ({ words }: IWordsList) => {
             </div>
             <div className={styles.page_content}>
                 <Col className={styles?.cards}>
-                    {words.map(((el: any, idx) => {
+                    {wordsList.map(((el: any, idx) => {
                         return (
                             <Accordion className={styles.card} key={idx}>
                                 <Accordion.Item eventKey="1">
@@ -63,19 +68,5 @@ export const WordListPage = ({ words }: IWordsList) => {
             </div>
         </div>
     )
-}
-
-export const getStaticProps: GetStaticProps = async (context) => {
-    const response: Response = await fetch('https://timelysoft-backend.herokuapp.com/jobs')
-    const words = await response.json()
-    return {
-        props: {
-            words,
-        },
-    }
-}
-
-WordListPage.propTypes = {
-    words: PropTypes.array
 }
 export default WordListPage
